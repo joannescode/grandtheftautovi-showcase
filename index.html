@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lucas Joannes Vieira Ribeiro" />
+    <meta
+      name="description"
+      content="Página de anúncio para o GTA 6, com data de lançamento, trailer, e galeria de imagens."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logos/rockstarlogo.png" type="image/x-icon" />
+    <title>Anúncio: Grand Theft Auto VI</title>
+  </head>
+
+  <body>
+    <!-- Início da página, contendo a barra de navegação, imagem etc -->
+
+    <header id="inicio">
+      <nav id="navegacao">
+        <div id="logo-container">
+          <img src="images/logos/rockstarlogo.png" alt="Logo Rockstar Games"/>
+        </div>
+        <ul id="menu">
+          <li>
+            <a href="https://www.rockstargames.com" target="_blank"
+              >Rockstar Games</a
+            >
+          </li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#acesso-antecipado">Acesso Antecipado</a></li>
+          <li><a href="#trailer">Trailer</a></li>
+        </ul>
+      </nav>
+      <h1 id="titulo-do-inicio">Grand Theft Auto VI: GTA 6</h1>
+    </header>
+
+    <main>
+      <section>
+        <!-- Seção de lançamento, contendo o container com a data de lançamento e plataformas -->
+
+        <article class="topico">
+          <div id="container-lancamento">
+            <h2 class="titulos-container">Data de Lançamento</h2>
+            <p id="data">
+              14/11/2025, sexta-feira 09:00 AM
+              <img src="images/calendario.png" alt="ícone de calendário" />
+            </p>
+            <p id="plataformas">Disponível nas seguintes plataformas:</p>
+            <p id="tipos-plataformas">
+              Xbox Series X | PlayStation 5/Pro | Windows 11 | MacBook Pro
+            </p>
+            <ul class="logotipos-plataformas">
+              <li><img src="images/logos/xbox.png" alt="Logo do Xbox" /></li>
+              <li>
+                <img
+                  src="images/logos/playstation.png"
+                  alt="Logo do PlayStation"
+                />
+              </li>
+              <li>
+                <img src="images/logos/windows.png" alt="Logo do Windows" />
+              </li>
+              <li>
+                <img src="images/logos/apple.png" alt="Logo da Apple" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="container-acesso-antecipado"  id="acesso-antecipado">
+            <form action="#" method="post" autocomplete="off" id="formulario">
+              <legend class="titulos-container">
+                Garanta seu acesso antecipado!
+              </legend>
+              <label for="nome"
+                >Preencha com seu nome
+                <input
+                  type="text"
+                  id="nome"
+                  name="user_name"
+                  placeholder="Carl Johnson"
+                  required
+                />
+              </label>
+              <label for="mail"
+                >Preencha com seu e-mail
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  placeholder="seumelhoremail@email.com"
+                  required
+                />
+              </label>
+              <label for="regiao">
+                Escolha sua região
+                <select name="regiao" id="regiao" required>
+                  <option value="BR">Brasil</option>
+                  <option value="NA">North America</option>
+                  <option value="EU">Europe</option>
+                  <option value="LATAM">Lattin America</option>
+                  <option value="APAC">Asia-Pacifc</option>
+                  <option value="OCE">Oceania</option>
+                  <option value="SEA">Southeast Asia</option>
+                  <option value="EUNE">Europe Nordic & East</option>
+                  <option value="EUW">Europe West</option>
+                  <option value="KR">Korea</option>
+                  <option value="CN">China</option>
+                  <option value="RU">Russia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="MENA">Middle East and North Africa</option>
+                  <option value="IN">Índia</option>
+                </select>
+              </label>
+              <input type="submit" value="Garantir" class="btn_submit" />
+            </form>
+          </div>
+        </article>
+
+        <!-- Seção do trailer do jogo -->
+
+        <article id="trailer" class="topico">
+          <h2 class="titulos-topicos">Trailer GTA VI</h2>
+          <iframe
+            id="video-trailer"
+            width="100%"
+            height="auto"
+            src="https://www.youtube.com/embed/QdBZY2fkU-0?si=PKYk_YZ_0kG2v7Zn"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p id="historia">
+            GTA 6 será ambientado em Leonida, um estado da cidade fictícia de
+            Vice City, que retorna a aparecer na franquia após 18 anos desde sua
+            última aparição em GTA: Vice City Stories, prelúdio do clássico GTA:
+            Vice City.
+          </p>
+        </article>
+
+    <!-- Rodapé contendo os créditos do criador da página  -->
+
+    <footer class="rodape">
+      <div class="footer-content">
+        <p id="creditos">
+          Site feito com ❤️ por
+          <a href="https://github.com/joannescode"
+            >Lucas Joannes (joannescode)</a
+          >
+          em 2024
+        </p>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://github.com/joannescode"
+              target="_blank"
+              aria-label="GitHub"
+              ><img src="images/social-icons/github.png" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lucas-joannes-lj1411/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><img src="images/social-icons/linkedin.png" alt="LinkedIn"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
