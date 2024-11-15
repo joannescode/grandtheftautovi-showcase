@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "pricedown";
+  src: url("font/pricedown/pricedown-bl.otf") format("opentype");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "pricedown", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Seção Início da página */
+
+#inicio {
+  background-image: url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Barra de navegação */
+#navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  border-bottom: #ffab00 3.5px solid;
+}
+
+/* Logo */
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo-container img {
+  height: 50px;
+}
+
+/* Menu */
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  margin: 0 1.5rem;
+}
+
+#navegacao a {
+  font-family: Helvetica, sans-serif;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#navegacao a:hover {
+  border-bottom: 2px solid #ffab00;
+}
+
+#titulo-do-inicio {
+  font-size: 18rem;
+  text-transform: uppercase;
+  padding: 1em;
+  color: white;
+  -webkit-text-stroke: 6px black;
+  max-width: 8ch;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: auto;
+}
+
+/* Estilização geral */
+
+main {
+  background-color: rgba(0, 0, 0, 0.95);
+  background-image: url(images/personagem.png);
+  background-position: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topico {
+  display: flex;
+  align-items: center;
+  margin: 0%;
+}
+
+.titulos-topicos {
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 4.5px white;
+}
+
+/* Seção do lançamento - data e plataformas */
+
+.titulos-container {
+  font-size: 7rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 4.5px white;
+}
+
+#container-lancamento {
+  border: #ffab00 2px solid;
+  margin: 10% 5%;
+  padding: 0 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 40%;
+}
+
+#data {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+
+#data img {
+  width: 8%;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+#plataformas {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5%;
+}
+
+#tipos-plataformas {
+  font-size: 1.8rem;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.logotipos-plataformas {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 0;
+}
+
+.logotipos-plataformas li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logotipos-plataformas img {
+  width: 100px;
+  object-fit: contain;
+}
+
+/* Forms de preenchimento do acesso antecipado */
+
+.container-acesso-antecipado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  scroll-margin: 115px;
+}
+
+#formulario {
+  padding: 4em;
+  border: 2px solid #ffab00;
+  background-color: rgba(0, 0, 0, 0.80);
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#formulario label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 2.2rem;
+}
+
+#formulario legend {
+  padding-bottom: 3rem;
+  max-width: 18ch;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"] {
+  width: 45%;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+#formulario select[name="regiao"] {
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn_submit {
+  width: 25%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #ffab00;
+}
+
+
+/* Seção de trailer */
+
+#trailer {
+  display: flex;
+  flex-direction: column;
+  scroll-margin: -30px;
+}
+
+#video-trailer {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  border: 2px solid #ffab00;
+}
+
+#historia {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 2.4rem;
+  max-width: 70ch;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+/* Rodapé da página */
+.rodape {
+  border-top: #ffab00 3.5px solid;
+  padding: 1rem 0;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#creditos a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffab00;
+}
+
+#creditos a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
