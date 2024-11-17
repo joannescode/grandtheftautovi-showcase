@@ -1,7 +1,6 @@
 :root {
     --border-theme: #ffab00 3.5px solid;
     --secondary--font: Helvetica, sans-serif;
-    --titles-shadow: 0 0 4.5px white;
     --color-text: #ffffff
 }
 
@@ -11,15 +10,20 @@
     src: url("font/pricedown/pricedown-bl.otf") format("opentype");
 }
 
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 62.5%;
     font-family: "pricedown", sans-serif;
 }
 
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     background-color: white;
 }
 
@@ -29,6 +33,8 @@ body {
     background-image: url(images/banner.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 
 #navegacao {
@@ -103,12 +109,14 @@ main {
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
 }
 
 .topico {
     display: flex;
     flex-direction: column;
-    margin: 5% 10%;
+    padding: 6%;
+    margin: auto 2.5%;
 }
 
 .titulos-topicos {
@@ -120,23 +128,76 @@ main {
 
 /* Forms de preenchimento do acesso antecipado */
 
-
-/* Seção do lançamento - data e plataformas */
-
-#container-lancamento {
-    padding: 2rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    border: var(--border-theme);
-}
-
 .titulos-container {
     font-size: 4.5rem;
     text-align: center;
     color: var(--color-text);
     text-shadow: var(--titles-shadow);
+}
+
+.container-acesso-antecipado {
+    margin: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-theme);
+    scroll-margin: 7.2rem;
+}
+
+#formulario {
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+#formulario legend {
+    padding: 2rem 5rem;
+}
+
+#formulario label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--secondary--font);
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"] {
+    padding: 0.5rem;
+}
+
+#formulario select[name="regiao"] {
+    text-align: center;
+    height: 3rem;
+}
+
+.btn_submit {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ffab00;
+    text-align: center;
+    margin: 5% 0;
+}
+
+
+/* Seção do lançamento - data e plataformas */
+
+#container-lancamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-theme);
+}
+
+#container-lancamento h2 {
+    padding: 1.5rem 5rem;
 }
 
 #data {
@@ -158,7 +219,7 @@ main {
     font-family: var(--secondary--font);
     font-size: 1.5rem;
     text-align: center;
-    padding: 2.5%;
+
 }
 
 #tipos-plataformas {
