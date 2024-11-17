@@ -1,0 +1,96 @@
+:root {
+    --border-theme: #ffab00 3.5px solid;
+    --secondary--font: Helvetica, sans-serif;
+}
+
+/* Fonte padrão e reset */
+@font-face {
+    font-family: "pricedown";
+    src: url("font/pricedown/pricedown-bl.otf") format("opentype");
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "pricedown", sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Seção início da página */
+
+#inicio {
+    background-image: url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    border-bottom: var(--border-theme);
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    padding: 1rem 2rem;
+}
+
+
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container img {
+    height: auto;
+    max-height: 3rem;
+    width: auto;
+    max-width: 8rem;
+}
+
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem;
+    list-style-type: none;
+}
+
+#menu li {
+    margin: 0 1rem;
+}
+
+#navegacao a {
+    font-family: var(--secondary--font);
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: bolder;
+}
+
+#navegacao a:hover {
+    border-bottom: 0.1rem solid #ffab00;
+}
+
+#titulo-do-inicio {
+    font-size: 8rem;
+    text-transform: uppercase;
+    padding: 0.8em;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    text-align: center;
+    margin: auto;
+
+}
